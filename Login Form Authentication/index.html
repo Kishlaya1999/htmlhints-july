@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+     <link rel="stylesheet" href="./style.css">
+     <title>Login form Authentication</title>
+</head>
+<body>
+     <div class="container">
+          <div class="login">
+               <h1>Login Form</h1>
+               <form>
+                    <div class="input">
+                         <input class="input-field" type="email" id="email" placeholder="Enter you email" autocomplete="off" required><br>
+                         <span style="display: none; color: red;" id="emailOperatorMissingMessage">Symbols missing in the email</span> 
+                         <span style="display: none; color: red;" id="emailInvalidMessage">Invalid Email</span>      
+                         <br><br>
+                    </div>
+                    <div class="input">
+                         <input class="input-field" type="password" id="password" placeholder="Enter your password" autocomplete="off" required>
+                         <i id="eye" class="fas fa-eye-slash"></i><br>
+                         <span style="display: none; color: red;" id="passwordBlankMessage">Don't leave it blank</span>      
+                         <span style="display: none; color: red;" id="passLengthMessage">Minimum 8 digit password required</span> <br><br>
+                    </div>
+                    <input class="submit" id="submit" type="submit" value="Submit">
+               </form>
+          </div>
+     </div>
+
+     
+     <script src="./script.js"></script>
+</body>
+</html>

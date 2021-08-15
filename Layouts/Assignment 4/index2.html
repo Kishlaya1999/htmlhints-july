@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Assignment 4</title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+          }
+
+          /* #A7CACD */
+          /* #E3EFF0 */
+          /* #CED911 */
+
+          .containter {
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               grid-template-rows: repeat(7, 1fr);
+               grid-gap: 10px;
+               height: 100vh;
+               /* width: 600px; */
+          }
+
+          .item-1,
+          .item-2,
+          .item-3,
+          .item-5,
+          .item-6,
+          .item-8 {
+               background-color: #A7CACD;
+          }
+
+          .item-4,
+          .item-7 {
+               background-color: #CED911;
+          }
+
+          .items {
+               position: relative;
+          }
+
+          h3 {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+          }
+
+          .item-1 {
+               grid-column: 1 / 4;
+          }
+
+          .item-2 {
+               grid-column: 1 / 3;
+               grid-row: 2 / 5;
+          }
+
+          .item-3 {
+               grid-column: 3 / 4;
+               grid-row: 2 / 4;
+          }
+
+          .item-4 {
+               grid-column: 3 / 4;
+               grid-row: 4 / 5;
+          }
+
+          .item-5 {
+               grid-column: 1 / 4;
+          }
+
+          .item-6 {
+               grid-column: 1 / 3;
+          }
+
+          .item-7 {
+               grid-column: 3 / 4;
+          }
+
+          .item-8 {
+               grid-column: 1 / 4;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="containter">
+          <div class="items item-1">
+               <h3>Header</h3>
+          </div>
+          <div class="items item-2">
+               <h3>Intro Copy</h3>
+          </div>
+          <div class="items item-3">
+               <h3>Hero Image</h3>
+          </div>
+          <div class="items item-4">
+               <h3>Call to Action</h3>
+          </div>
+          <div class="items item-5">
+               <h3>Features</h3>
+          </div>
+          <div class="items item-6">
+               <h3>More Copy</h3>
+          </div>
+          <div class="items item-7">
+               <h3>Call to Action</h3>
+          </div>
+          <div class="items item-8">
+               <h3>Footer</h3>
+          </div>
+     </div>
+</body>
+
+</html>

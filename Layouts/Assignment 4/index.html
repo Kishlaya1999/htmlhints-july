@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Assignment 4</title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+          }
+
+          .container {
+               display: flex;
+               flex-direction: column;
+               height: 100vh;
+          }
+
+          .head {
+               background-color: #A7CACD;
+               width: 100vw;
+               flex: 1;
+          }
+
+          .flex-items1,.flex-items3{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+
+          .middle {
+               background-color: #E3EFF0;
+               width: 100vw;
+               flex: 6;
+               display: grid;
+               grid-gap: 10px;
+               justify-content: center;
+               align-content: center;
+               grid-template-columns: 74vw 24vw;
+               grid-template-rows:  27vh 10vh 15vh 15vh;
+               grid-template-areas: 
+                    "intro image"
+                    "intro call-to-action1"
+                    "features features"
+                    "more call-to-action2";
+          }
+
+          .grid-items{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background-color: #A7CACD;
+          }
+
+          .intro{
+               grid-area: intro;
+          }
+          .image{
+               grid-area: image;
+          }
+          .call-to-action1{
+               grid-area: call-to-action1;
+               background-color: #CED911;
+          }
+
+          .features{
+               grid-area: features;
+          }
+          .more{
+               grid-area: more;
+          }
+
+          .foot {
+               background-color: #A7CACD;
+               width: 100vw;
+               flex: 1;
+          }
+          .call-to-action2{
+               grid-area: call-to-action2;
+               background-color: #CED911;
+          }
+
+          .foot{
+               grid-area: foot;
+          }
+
+
+          /* #A7CACD */
+          /* #E3EFF0 */
+          /* #CED911 */
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          <header class="flex-items1 head">HEADER</header>
+          <section class="flex-items2 middle">
+               
+               <main class="grid-items intro">Intro Copy</main>
+               <div class="grid-items image">Hero India</div>
+               <section class="grid-items call-to-action1">Call to Action</section>
+               <section class="grid-items features">Features</section>
+               <div class="grid-items more">More copy</div>
+               <section class="grid-items call-to-action2">Call to Action</section>
+          </section>
+          <footer class="flex-items3 foot">FOOTER</footer>
+     </div>
+</body>
+
+</html>
